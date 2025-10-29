@@ -1,0 +1,80 @@
+.ad {
+  margin-bottom: 25px;
+  &__alert {
+    font-size: 24px;
+    font-family: Playfair;
+    font-style: italic;
+    font-weight: 700;
+    color: #ff0004;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &__container {
+  }
+  &__free {
+    background-color: #ffbdd7;
+    font-size: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: #6c002b;
+    padding-bottom: 5px;
+    font-family: Benzin;
+    margin-bottom: 10px;
+  }
+  &__img-link {
+    width: 30px;
+  }
+  &__item {
+    position: relative;
+    margin-left: 35px;
+    color: #6c002b;
+    font-family: Inter;
+    font-weight: 400;
+    margin-bottom: 15px;
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 30px;
+      height: 25px;
+      left: calc(0% - 35px);
+      background-image: url("../../img/tick.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 10px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 23px;
+    text-transform: uppercase;
+    background-color: #6c002b;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  &__title {
+    font-family: Inter;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 0px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}

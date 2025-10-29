@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ol,
+ul,
+div,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+html,
+body {
+  min-height: 100%; // o‘zgartirildi: body sahifa kontenti bo‘yicha o‘sadi
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #ffdae9 0%,
+    rgba(255, 148, 191, 0) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+ol {
+  list-style: none;
+}

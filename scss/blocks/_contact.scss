@@ -1,0 +1,31 @@
+.contact {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img {
+    max-width: 500px;
+    width: 100%;
+  }
+  &__img-link {
+    width: 30px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 10px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: #6c002b;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    width: 100%;
+  }
+}

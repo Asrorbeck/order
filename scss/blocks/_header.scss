@@ -1,0 +1,41 @@
+.header {
+  padding-top: 10px;
+  &__container {
+  }
+  &__date,
+  &__time {
+    font-family: Inter;
+  }
+  &__img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-text {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: italic;
+  }
+  &__right {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid #ff94bf;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__time {
+  }
+}

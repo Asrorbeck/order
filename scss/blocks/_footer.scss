@@ -1,0 +1,20 @@
+.footer {
+  margin-bottom: 15px;
+  &__dec {
+    margin-top: 5px;
+  }
+  &__down {
+    font-family: GothamXlight;
+    font-weight: 400;
+    text-align: center;
+    font-size: 13px;
+  }
+  &__up {
+    font-family: GothamXNarrow;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
