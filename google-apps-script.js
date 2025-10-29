@@ -10,7 +10,7 @@
 
 function doPost(e) {
   try {
-    const SPREADSHEET_ID = "10zGsbDC9l4Y_9V83QpgCCApMU_fTxZ85B7LyOuq3l2o";
+    const SPREADSHEET_ID = "1sgXnwmPqD0qQmdcHIxixbt5YRrsDvTXztLuij7nId2s";
 
     const spreadsheet = SpreadsheetApp.openById(SPREADSHEET_ID);
     const sheet = spreadsheet.getActiveSheet();
