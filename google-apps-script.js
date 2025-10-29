@@ -1,14 +1,11 @@
 /**
- * Google Apps Script - Form Handler
- * Bu kod Google Sheets ga form ma'lumotlarini yozish uchun ishlatiladi
- *
  * O'rnatish:
- * 1. Google Sheets oching
- * 2. Extensions > Apps Script ga boring
- * 3. Bu kodni yozing yoki nusxalang
- * 4. SPREADSHEET_ID ni o'z Google Sheets ID sizga almashtiring
- * 5. Deploy > New deployment > Web app
- * 6. URL ni nusxalang va js/index.js da scriptURL ga qo'ying
+ * 1. Google Sheets ochib
+ * 2. Extensions > Apps Script ga borish kerak
+ * 3. Bu kodni yozing, ichida turgan functionni o'chirib tashlab
+ * 4. Keyin tepa ong burchakdagi deploy knopkasini bosib, New deployment > Web app ni tanlang
+ * 5. Description ni to'ldirib, Who has access ga esa only myselfni tanlab qo'yib deployni bosing
+ * 6. Deployment ID bilan URL ni nusxalab kodga joylashtirish kerak shu sabab uni jonatishlaringiz kerak menga
  */
 
 function doPost(e) {
