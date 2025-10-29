@@ -233,11 +233,12 @@ registerForm.addEventListener("submit", (e) => {
   const fullName = fullNameInput.value.trim();
   const phone = phoneInput.value;
 
-  const submitButton = registerForm.querySelector(".modal__submit");
-  const originalButtonText = submitButton.textContent;
-  submitButton.textContent = "Yuborilmoqda...";
-  submitButton.disabled = true;
+  // Darhol keyingi bosqichga o'tkazamiz
+  modalOverlay.classList.remove("active");
+  subscribeModalOverlay.classList.add("active");
+  document.body.style.overflow = "hidden";
 
+  // POST so'rovini orqa fonda yuboramiz (fire-and-forget)
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbw4tfLjjNZ6za3TQX28RkSZCbLz8-vNyQH-QtYyKJ3OWu0vLvLrBEU8Bvi18Kha0_A5/exec";
 
@@ -247,6 +248,7 @@ registerForm.addEventListener("submit", (e) => {
     timestamp: new Date().toISOString(),
   });
 
+  // Orqa fonda yuborish, natijani kutmagan holda
   fetch(scriptURL, {
     method: "POST",
     mode: "no-cors",
@@ -254,20 +256,10 @@ registerForm.addEventListener("submit", (e) => {
       "Content-Type": "application/json",
     },
     body: payload,
-  })
-    .then(() => {
-      modalOverlay.classList.remove("active");
-      subscribeModalOverlay.classList.add("active");
-    })
-    .catch((error) => {
-      console.error("Error sending form data:", error);
-      modalOverlay.classList.remove("active");
-      subscribeModalOverlay.classList.add("active");
-    })
-    .finally(() => {
-      submitButton.textContent = originalButtonText;
-      submitButton.disabled = false;
-    });
+  }).catch((error) => {
+    console.error("Error sending form data:", error);
+    // Xato bo'lsa ham foydalanuvchi ko'rgan modal o'zgarmaydi
+  });
 });
 
 subscribeModalOverlay.addEventListener("click", (e) => {
